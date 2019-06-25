@@ -15,8 +15,15 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
   setTimeout(typeWriter,2000);
 
 
+let button = document.getElementById('reveal');
+let box = document.getElementById("box");
 
 
+
+  button.addEventListener("click", function(e){ //begin listener event
+        console.log('I clicked here')
+        box.style.transform = "rotateX(90deg)";
+  });
 
 
 });
