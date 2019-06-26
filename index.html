@@ -11,20 +11,20 @@
 
   <body>
     <div class="container">
-      <nav>
+      <nav class="card">
         <ul>
-          <li><a>👋Hi there</a></li>
-          <li><a>🦸About me</a></li>
-          <li><a>📚Projects</a></li>
-          <li><a>💌Get in touch</a></li>
+          <li><a href="#home">👋Hi there</a></li>
+          <li><a href="#about">🦸About me</a></li>
+          <li><a href="#projects">📚Projects</a></li>
+          <li><a href="#social">💌Get in touch</a></li>
         </ul>
       </nav>
-      <div class="home">
+      <div class="home" id="home">
         <p>Hi there</p>
         <h1>I'm Débora</h1>
         <p id="typewriting">yes, with the little thing on top of the “e”…</p>
       </div>
-      <div class="About">
+      <div class="About" id="about">
         <h2>About me</h2>
         <p>
           Hey there, I’m a curious person living in Amsterdam who recentely got bitten by the Programming Bug (ha, get it?) and decided to learn front-end web development.
@@ -37,7 +37,7 @@
           I think the Programming Bug bit me when I realized I could automate a lot of what I was doing at my job, #spreadsheetsarethebomb, and so REGEX was introduced to my life, and I learned the basics of programming, simple things like for-loops —
           I was effectively writing computer programms in <a><span>Apple Numbers</span></a>.
         </p>
-        <h3>Previously, on HBO’s “Deb’s Journey”™:</h3>
+        <h3>Previously, on HBO’s “Deb’s&nbsp;Journey”™:</h3>
 
         <ul class="life_events">
           <li>
@@ -81,48 +81,48 @@
           </li>
         </ul>
       </div>
-      <div class="projects">
+      <div class="projects" id="projects">
         <h2>Projects</h2>
         <p>My most recent project is this very own website, which I’m super proud of!
         I’m also learning a lot about web development through Treehouse, and with it I’ve been building several
         cool projects to practice my skills, here’s a couple:</p>
         <div class="card_container">
-          <div class="card">
+          <div class="project">
             <span class="emoji">👩🏼‍💻</span>
             <h4>My personal website</h4>
             <p>My most personal project, and the one I’m most proud of. Built with HTML/CSS/JS.‍</p>
             <a href="http://deboraribeiro.netlify.com"><span>Visit the project →</span></a>
             <a href="https://github.com/mindeby/my-portfolio"><span>Source code on GitHub →</span></a>
           </div>
-          <div class="card">
+          <div class="project">
             <span class="emoji">👩🏼‍💻</span>
             <h4>Employee Directory</h4>
             <p>I created an employee directory that communicated with a third-party API. Built with HTML/CSS/JS/JQuery.‍</p>
             <a href="https://project-8.netlify.com"><span>Visit the project →</span></a>
             <a href="https://github.com/mindeby/Techdegree-Project-8"><span>Source code on GitHub →</span></a>
           </div>
-          <div class="card">
+          <div class="project">
             <span class="emoji">👩🏼‍💻</span>
             <h4>WebApp Dashboard</h4>
             <p>In this project I created interactive graphics and enhanced my skills on user interactivity. Built with HTML/CSS/JS.‍</p>
             <a href="https://project-7.netlify.com"><span>Visit the project →</span></a>
             <a href="https://github.com/mindeby/Techdegree-Project-7"><span>Source code on GitHub →</span></a>
           </div>
-          <div class="card">
+          <div class="project">
             <span class="emoji">👩🏼‍💻</span>
             <h4>Game Show App</h4>
             <p>This was the most fun! It's a game that consists on guessing what my favourite shows are. Give it a try! :) Built with HTML/CSS/JS.‍</p>
             <a href="https://project-number-6.netlify.com"><span>Visit the project →</span></a>
             <a href="https://github.com/mindeby/Techdegree-Project-6"><span>Source code on GitHub →</span></a>
           </div>
-          <div class="card">
+          <div class="project">
             <span class="emoji">👩🏼‍💻</span>
             <h4>Interactive Photo Gallery</h4>
             <p>This project was my first interaction with jquery and jquery plugins by creating a lightbox to display higher definition pictures. Built with HTML/CSS/JS/Jquery.‍</p>
             <a href="https://my5thproject.netlify.com"><span>Visit the project →</span></a>
             <a href="https://github.com/mindeby/Techdegree-Project-5"><span>Source code on GitHub →</span></a>
           </div>
-          <div class="card">
+          <div class="project">
             <span class="emoji">👩🏼‍💻</span>
             <h4>Web Style Guide</h4>
             <p>In this project I used Sass for the first time. The challenge was to match the look of the page to the mockups by altering the given classes only. Built with HTML/CSS/SCSS.‍</p>
@@ -132,7 +132,7 @@
         </div>
       </div>
 
-      <div class="social">
+      <div class="social" id="social">
         <h2>Get in touch</h2>
         <p>I’m still pretty new to this whole tech industry, but it seems like it’s a cool one.
           If you’d like to get in touch, maybe we could build something cool together?
@@ -143,9 +143,9 @@
           </ul>
           <div class="scene">
             <div id="box" class="box">
-              <div class="front"><button id="reveal"><h3>✨ Reveal Contact Form ✨</h3></button></div>
-              <div class="back">
-                <form action="index.html" method="post">
+              <div id="front" class="front card"><button id="reveal"><h3>✨ Reveal Contact Form ✨</h3></button></div>
+              <div class="back card">
+                <form method="POST" data-netlify="true" action="index.html#social">
                   <div class="label_input">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="user_name" placeholder="Jyn Erso" required>
@@ -159,11 +159,12 @@
                   <label for="message">Message:</label>
                   <textarea id="message" name="user_message" placeholder="Yo, was tarking feeling well? He looked very CGI."></textarea>
 
-                  <button type="submit">Sign Up</button>
+                  <button id="submit" type="submit">Sign Up</button>
                 </form>
                 </div>
             </div>
           </div>
+          <a href="#home"><span>Back to top</span></a>
       </div>
 
       <footer>

@@ -1,29 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => { //wait until everything loaded
 
   let i = 0;
-  let txt = 'and no “h", it’s Portuguese :)';
-  let speed = 60;
+  let speed = 100;
+  let txt = "it's portuguese :)"
+
 
   function typeWriter() {
     if (i <= txt.length) {
+      console.log(txt.length);
       document.getElementById("typewriting").innerHTML += txt.charAt(i);
       i++;
       setTimeout(typeWriter, speed);
     }
   }
 
-  setTimeout(typeWriter,2000);
+
+  setTimeout(typeWriter, 1500);
 
 
-let button = document.getElementById('reveal');
+let reveal = document.getElementById('reveal');
 let box = document.getElementById("box");
+let front = document.getElementById("front");
+let submit = document.getElementById('submit');
 
 
-
-  button.addEventListener("click", function(e){ //begin listener event
+  reveal.addEventListener("click", function(e){ //begin listener event
         console.log('I clicked here')
         box.style.transform = "rotateX(90deg)";
   });
+
+  submit.addEventListener("click", function(e){ //begin listener event
+        
+  });
+
+
+
 
 
 });

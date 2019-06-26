@@ -38,11 +38,9 @@ h4 {
   font-size: 16px;
 }
 
-
 .container {
   width: 98%;
   max-width: 900px;
-  padding: 10px;
   margin: auto;
 }
 
@@ -55,12 +53,15 @@ ul {
   min-height: 50px;
 }
 
+.card {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.07);
+  border-radius: 8px;
+}
+
 nav {
-margin-top: 0;
-height: 50px;
-background: #FFFFFF;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
-border-radius: 8px;
+  margin-top: 0;
+  border-radius: 8px;
 }
 
 li {
@@ -72,7 +73,6 @@ nav li {
   text-align: left;
   padding: 8px 2px;
   margin: 7px auto;
-  font-size: 14px;
 }
 
 nav li:hover {
@@ -84,7 +84,6 @@ nav li:active {
   background: rgba(142,219,194,0.22);
   border-radius: 6px;
 }
-
 
 .milestone span{
   display: inline-block;
@@ -134,7 +133,7 @@ nav li:active {
 .scene {
   width: 90%;
   height: 500px;
-  perspective: 800px;
+  /*perspective: 800px;*/
   perspective-origin: center;
   margin: 20px auto;
 }
@@ -176,7 +175,9 @@ label, input, textarea, button[type=submit] {
   display: block;
   width: 90%;
   margin: auto;
+  margin-top: 8px;
 }
+
 
 input, textarea, button[type=submit] {
   border: 2px solid #E3E3E3;
@@ -200,5 +201,5 @@ input:focus, textarea:focus, button[type=submit]:focus{
 }
 
 #message {
-  min-height: 100px;
+  min-height: 150px;
 }
