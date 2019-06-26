@@ -30,7 +30,7 @@ let submit = document.getElementById('submit');
   });
 
   submit.addEventListener("click", function(e){
-    document.getElementById('hi').innerHTML = 'Nice to meet you!!🤩'
+    document.getElementById('hi').innerHTML = '<h2>Nice to meet you!!🤩</h2>'
   });
 
 
