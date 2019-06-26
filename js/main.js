@@ -22,6 +22,8 @@ let reveal = document.getElementById('reveal');
 let box = document.getElementById("box");
 let front = document.getElementById("front");
 let submit = document.getElementById('submit');
+let hamburger = document.getElementById('hamburger');
+let dropdown = document.getElementById('dropdown');
 
 
   reveal.addEventListener("click", function(e){
@@ -32,6 +34,17 @@ let submit = document.getElementById('submit');
   submit.addEventListener("click", function(e){
     document.getElementById('hi').innerHTML = '<h2>Nice to meet you!!🤩</h2>'
   });
+
+  hamburger.addEventListener("click", function(e){
+    dropdown.style.display ='block';
+  });
+
+  document.addEventListener("click", function(e){
+    if(e.target !== hamburger ){
+      dropdown.style.display ='none';
+    }
+  });
+
 
 
 
