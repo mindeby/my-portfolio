@@ -24,15 +24,14 @@ let front = document.getElementById("front");
 let submit = document.getElementById('submit');
 
 
-  reveal.addEventListener("click", function(e){ //begin listener event
+  reveal.addEventListener("click", function(e){
         console.log('I clicked here')
         box.style.transform = "rotateX(90deg)";
   });
 
-  submit.addEventListener("click", function(e){ //begin listener event
-        
+  submit.addEventListener("click", function(e){
+    document.getElementById('hi').innerHTML = 'Nice to meet you!!🤩'
   });
-
 
 
 
