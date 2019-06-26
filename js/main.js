@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
 
   let i = 0;
   let speed = 80;
-  let txt = "it's portuguese :)"
-
+  let txt = "it's Portuguese!"
 
   function typeWriter() {
     if (i <= txt.length) {
@@ -14,18 +13,15 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
     }
   }
 
-
   setTimeout(typeWriter, 1500);
 
-
-let reveal = document.getElementById('reveal');
-let box = document.getElementById("box");
-let front = document.getElementById("front");
-let submit = document.getElementById('submit');
-let hamburger = document.getElementById('hamburger');
-let dropdown = document.getElementById('dropdown');
-let emojis = document.getElementsByClassName('emoji')
-
+  let reveal = document.getElementById('reveal');
+  let box = document.getElementById("box");
+  let front = document.getElementById("front");
+  let submit = document.getElementById('submit');
+  let hamburger = document.getElementById('hamburger');
+  let dropdown = document.getElementById('dropdown');
+  let emojis = document.getElementsByClassName('emoji')
 
   reveal.addEventListener("click", function(e){
         document.getElementById('hi').style.height = '500px';
@@ -38,23 +34,17 @@ let emojis = document.getElementsByClassName('emoji')
   });
 
   hamburger.addEventListener("click", function(e){
-    dropdown.style.display ='block';
+    dropdown.classList.add('expanded');
   });
 
   document.addEventListener("click", function(e){
     if(e.target !== hamburger ){
-      dropdown.style.display ='none';
+      dropdown.classList.remove('expanded');
     }
   });
 
-
-
-for (let i = 0; i <= 4; i+=1) {
-  emojis[i].classList.add('rotating');
-}
-
-
-
-
+  for (let i = 0; i <= 4; i+=1) {
+    emojis[i].classList.add('rotating');
+  }
 
 });

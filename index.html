@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>My Portfolio</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles.scss" rel="stylesheet">
   </head>
 
   <body>
@@ -14,24 +14,21 @@
 
       <nav class="card">
         <button id="hamburger">🍔 Menu</button>
-        <div class="dropdown">
-          <ul class="dropdown-content" id="dropdown">
-            <li><a href="#home">👋Hi there</a></li>
-            <li><a href="#about">🦸About me</a></li>
-            <li><a href="#projects">📚Projects</a></li>
-            <li><a href="#social">💌Get in touch</a></li>
-          </ul>
-        </div>
+        <ul class="navigation-links" id="dropdown">
+          <li><a href="#home">👋 Hi there</a></li>
+          <li><a href="#about">🦸 About me</a></li>
+          <li><a href="#projects">📚 Projects</a></li>
+          <li><a href="#social">💌 Get in touch</a></li>
+        </ul>
       </nav>
 
-
-
-      <div class="home" id="home">
+      <div class="section section-home" id="home">
         <p>Hi there</p>
         <h1>I'm Débora</h1>
-        <p id="typewriting">yes, with the little thing on top of the “e”…</p>
+        <p id="typewriting">yes, with the little thing on top of the “e”… </p>
       </div>
-      <div class="About" id="about">
+
+      <div class="section section-about" id="about">
         <h2>About me</h2>
         <p>
           Hey there, I’m a curious person living in Amsterdam who recentely got bitten by the Programming Bug (ha, get it?) and decided to learn front-end web development.
@@ -45,101 +42,97 @@
           I was effectively writing computer programs in <a href="http://www.schoolsparks.com/assets/images/early-childhood-development/math-number-awareness/five-apples.jpg" target="_blank"><span>Apple Numbers</span></a>.
         </p>
         <h3>Previously, on HBO’s “Deb’s&nbsp;Journey”™:</h3>
-
-        <ul class="life_events">
+        <ul class="life-events">
           <li>
             <div class="milestone">
               <span class="emoji">👩🏼‍🎓</span>
-              <span class="occurrence">Graduated College</span>
+              <h4>Graduated College</h4>
               <span class="year">2012</span>
-              <div class="vl"></div>
             </div>
           </li>
           <li>
             <div class="milestone">
               <span class="emoji">💁🏼‍</span>
-              <span class="occurrence">Hotel Waitress</span>
+              <h4>Hotel Waitress</h4>
               <span class="year">2013</span>
-              <div class="vl"></div>
             </div>
           </li>
           <li>
             <div class="milestone">
               <span class="emoji">👩🏼‍💼</span>
-              <span class="occurrence">Hostel Admin</span>
+              <h4>Hostel Admin</h4>
               <span class="year">2014</span>
-              <div class="vl"></div>
             </div>
           </li>
           <li>
             <div class="milestone">
               <span class="emoji">👩🏼‍💻</span>
-              <span class="occurrence">Finance and HR</span>
+              <h4>Finance and HR</h4>
               <span class="year">2014</span>
-              <div class="vl"></div>
             </div>
           </li>
           <li>
             <div class="milestone">
               <span class="emoji">🦸</span>
-              <span class="occurrence">Web Development</span>
+              <h4>Web Development</h4>
               <span class="year">2019</span>
             </div>
           </li>
         </ul>
       </div>
-      <div class="projects" id="projects">
+
+      <div class="section section-projects" id="projects">
         <h2>Projects</h2>
         <p>My most recent project is this very own website, which I’m super proud of!
         I’m also learning a lot about web development through Treehouse, and with it I’ve been building several
         cool projects to practice my skills, here’s a couple:</p>
-        <div class="card_container">
+        <div class="card-container">
           <div class="project">
             <span class="emoji">👩🏻‍🦳</span>
             <h4>My personal website</h4>
             <p>My most personal project, and the one I’m most proud of. It's the page you are looking at right now :D Built with HTML/CSS/JS.‍</p>
-            <a href="http://deboraribeiro.netlify.com" target="_blank"><span>Visit the project →</span></a>
-            <a href="https://github.com/mindeby/my-portfolio" target="_blank"><span>Source code on GitHub →</span></a>
+            <a class="power-links" href="http://deboraribeiro.netlify.com" target="_blank"><span>Visit the project →</span></a>
+            <a class="power-links" href="https://github.com/mindeby/my-portfolio" target="_blank"><span>Source code on GitHub →</span></a>
           </div>
           <div class="project">
             <span class="emoji">🧩</span>
             <h4>Employee Directory</h4>
             <p>I created an employee directory that communicated with a third-party API. Built with HTML/CSS/JS/JQuery.‍</p>
-            <a href="https://project-8.netlify.com" target="_blank"><span>Visit the project →</span></a>
-            <a href="https://github.com/mindeby/Techdegree-Project-8" target="_blank"><span>Source code on GitHub →</span></a>
+            <a class="power-links" href="https://project-8.netlify.com" target="_blank"><span>Visit the project →</span></a>
+            <a class="power-links" href="https://github.com/mindeby/Techdegree-Project-8" target="_blank"><span>Source code on GitHub →</span></a>
           </div>
           <div class="project">
             <span class="emoji">📊</span>
             <h4>WebApp Dashboard</h4>
             <p>In this project I created interactive graphics and enhanced my skills on user interactivity. Built with HTML/CSS/JS.‍</p>
-            <a href="https://project-7.netlify.com" target="_blank"><span>Visit the project →</span></a>
-            <a href="https://github.com/mindeby/Techdegree-Project-7" target="_blank"><span>Source code on GitHub →</span></a>
+            <a class="power-links" href="https://project-7.netlify.com" target="_blank"><span>Visit the project →</span></a>
+            <a class="power-links" href="https://github.com/mindeby/Techdegree-Project-7" target="_blank"><span>Source code on GitHub →</span></a>
           </div>
           <div class="project">
             <span class="emoji">🎱</span>
             <h4>Game Show App</h4>
             <p>This was the most fun! It's a game that consists on guessing what my favourite shows are. Give it a try! :) Built with HTML/CSS/JS.‍</p>
-            <a href="https://project-number-6.netlify.com" target="_blank"><span>Visit the project →</span></a>
-            <a href="https://github.com/mindeby/Techdegree-Project-6" target="_blank"><span>Source code on GitHub →</span></a>
+            <a class="power-links" href="https://project-number-6.netlify.com" target="_blank"><span>Visit the project →</span></a>
+            <a class="power-links" href="https://github.com/mindeby/Techdegree-Project-6" target="_blank"><span>Source code on GitHub →</span></a>
           </div>
           <div class="project">
             <span class="emoji">🏙</span>
             <h4>Interactive Photo Gallery</h4>
             <p>This project was my first interaction with jquery and jquery plugins by creating a lightbox to display higher definition pictures. Built with HTML/CSS/JS/Jquery.‍</p>
-            <a href="https://my5thproject.netlify.com" target="_blank"><span>Visit the project →</span></a>
-            <a href="https://github.com/mindeby/Techdegree-Project-5" target="_blank"><span>Source code on GitHub →</span></a>
+            <a class="power-links" href="https://my5thproject.netlify.com" target="_blank"><span>Visit the project →</span></a>
+            <a class="power-links" href="https://github.com/mindeby/Techdegree-Project-5" target="_blank"><span>Source code on GitHub →</span></a>
           </div>
           <div class="project">
             <span class="emoji">🗺</span>
             <h4>Web Style Guide</h4>
             <p>In this project I used Sass for the first time. The challenge was to match the look of the page to the mockups by altering the given classes only. Built with HTML/CSS/SCSS.‍</p>
-            <a href="https://4thprojectnetlify.netlify.com" target="_blank" ><span>Visit the project →</span></a>
-            <a href="https://github.com/mindeby/Techdegree-Project-4" target="_blank"><span>Source code on GitHub →</span></a>
+            <a class="power-links" href="https://4thprojectnetlify.netlify.com" target="_blank" ><span>Visit the project →</span></a>
+            <a class="power-links" href="https://github.com/mindeby/Techdegree-Project-4" target="_blank"><span>Source code on GitHub →</span></a>
           </div>
         </div>
       </div>
 
-      <div class="social" id="social">
+      <div class="section section-social" id="social">
         <h2>Get in touch</h2>
         <p>I’m still pretty new to this whole tech industry, but it seems like it’s a cool one.
           If you’d like to get in touch, maybe we could build something cool together?
@@ -158,7 +151,7 @@
                     <input type="text" id="name" name="user_name" placeholder="Jyn Erso" required>
                   </div>
 
-                  <div class="label_input">
+                  <div class="label-input">
                     <label for="Email_Address">Email address:</label>
                     <input type="email" id="Email_Address" name="user_email" placeholder="igottheplans@rebellion.com" required>
                   </div>
