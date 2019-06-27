@@ -12,6 +12,10 @@ html { font-family: 'Inter', sans-serif; }
   html { font-family: 'Inter var', sans-serif; }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: $background-color;
   color: $text-color;
@@ -37,6 +41,7 @@ h3 {
 
 h4 {
   font-weight: 500;
+  margin: 0 0 4px;
 }
 
 p {
@@ -113,9 +118,26 @@ button {
   border-radius: 8px;
 }
 
+.emoji-wrapper {
+  position: relative;
+  display: block;
+  font-size: 40px;
+  height: 64px;
+  width: 100%;
+  padding: 9px 0 2px;
+  text-align: center;
+  background: $tint-color-muted;
+}
+
+.milestone p,
+.project p {
+  font-size: 14px;
+  color: $text-color-muted;
+}
+
 /* === Navigation bar === */
 nav {
-  margin: 16px;
+  margin-top: 16px;
   padding: 8px 16px;
   text-align: center;
 
@@ -166,6 +188,75 @@ nav {
       width: auto;
       padding: 8px;
     }
+  }
+}
 
+/* === About me === */
+
+.section-about {
+  p {
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    margin: 64px auto 40px;
+  }
+}
+
+.life-events {
+  position: relative;
+
+  @media (min-width: 720px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.milestone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+
+  .emoji-wrapper {
+    width: 64px;
+    border-radius: 50%;
+    margin: 0 16px 0 0;
+
+    @media (min-width: 720px) {
+      margin: 0 0 8px 0;
+    }
+  }
+
+  .text-wrapper {
+    text-align: left;
+
+    @media (min-width: 720px) {
+      text-align: center;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 720px) {
+    flex-direction: column;
+  }
+}
+
+.time-line {
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  left: 30px;
+  background: $tint-color-muted;
+
+  @media (min-width: 720px) {
+    width: calc(100% - 90px);
+    height: 4px;
+    left: 45px;
+    top: 30px;
   }
 }
