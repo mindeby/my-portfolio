@@ -37,6 +37,7 @@ h2 {
 h3 {
   font-size: 22px;
   font-weight: 700;
+  margin: 0;
 }
 
 h4 {
@@ -113,7 +114,8 @@ button {
   margin: auto;
 }
 
-.section {
+.section,
+footer {
   margin-top: 104px;
 }
 
@@ -133,6 +135,13 @@ button {
   text-align: center;
   border-radius: 6px;
   background: $tint-color-muted;
+
+  a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 }
 
 .milestone p,
@@ -152,7 +161,7 @@ nav {
     border: none;
     width: 100%;
     padding: 8px 0;
-    margin: 8px 0;
+    // margin: 8px 0;
     border-radius: 6px;
     background: white;
     font-weight: 600;
@@ -294,5 +303,123 @@ nav {
 
   p {
     margin-bottom: 16px;
+  }
+}
+
+/* === Contact === */
+
+.section-social ul {
+  display: flex;
+  margin: 16px auto 40px;
+
+  li a {
+    margin-right: 16px;
+    border: none;
+    padding: 0;
+    transform: scale(1);
+    transition: transform .3s ease;
+
+    &:hover {
+      padding: 0;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 62px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.front {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+
+  button {
+    @extend h3;
+    padding: 16px;
+    width: 100%;
+  }
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  padding: 24px;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  label {
+    @extend p;
+    color: $text-color;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+
+  input,
+  textarea {
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: 2px solid #E3E3E3;
+
+    &:hover,
+    &:focus {
+      border-color: $tint-color;
+      outline: none;
+    }
+  }
+
+  textarea {
+    min-height: 164px;
+  }
+}
+
+#submit {
+  width: 100%;
+  padding: 10px 16px;
+  background: $tint-color-muted;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.back {
+  transform: rotateX(-90deg) translateZ(-140px) translateY(200px);
+}
+
+/* === Footer === */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: $text-color-muted;
+  margin-bottom: 104px;
+  padding-top: 16px;
+  border-top: 2px solid #E6E6E6;
+
+  a {
+    margin-top: 16px;
+    border: none;
+    text-decoration: underline;
+    padding: 0;
+
+    &:hover {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: 628px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }

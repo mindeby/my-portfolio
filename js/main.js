@@ -24,13 +24,13 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
   let emojis = document.getElementsByClassName('emoji')
 
   reveal.addEventListener("click", function(e){
-        document.getElementById('hi').style.height = '500px';
-        box.style.transform = "rotateX(90deg)"
+    document.getElementById('hi').style.height = '470px';
+    box.style.transform = "rotateX(90deg)"
   });
 
   submit.addEventListener("click", function(e){
     document.getElementById('hi').style.height = '100px';
-    document.getElementById('hi').innerHTML = '<h2>Nice to meet you!!🤩</h2>'
+    document.getElementById('hi').innerHTML = "<h3>👉 Nice to meet you, I'll get back to you soon!</h3>"
   });
 
   hamburger.addEventListener("click", function(e){
