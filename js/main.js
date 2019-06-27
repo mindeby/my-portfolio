@@ -29,8 +29,11 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
   });
 
   submit.addEventListener("click", function(e){
-    document.getElementById('hi').style.height = '100px';
-    document.getElementById('hi').innerHTML = "<h3>👉 Nice to meet you, I'll get back to you soon!</h3>"
+    let value = input.value
+    if (!value) {
+      document.getElementById('hi').style.height = '100px';
+      document.getElementById('hi').innerHTML = "<h3>👉 Nice to meet you, I'll get back to you soon!</h3>"
+    }
   });
 
   hamburger.addEventListener("click", function(e){
@@ -46,5 +49,8 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
   for (let i = 0; i <= 4; i+=1) {
     emojis[i].classList.add('rotating');
   }
+
+
+
 
 });
