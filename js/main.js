@@ -22,21 +22,14 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
   let hamburger = document.getElementById('hamburger');
   let dropdown = document.getElementById('dropdown');
   let emojis = document.getElementsByClassName('emoji')
-  let name_field = document.getElementById('name');
-  let email_field = document.getElementById('Email_Address');
-  let message_field = document.getElementById('message');
+
 
   reveal.addEventListener("click", function(e){
     document.getElementById('hi').style.height = '470px';
     box.style.transform = "rotateX(90deg)"
   });
 
-  submit.addEventListener("click", function(e){
-    if(name_field.value && email_field.value && message_field.value) {
-      document.getElementById('hi').style.display= "none";
-    }
-    document.getElementById('hi').style.display= "none";
-  });
+
 
   hamburger.addEventListener("click", function(e){
     dropdown.classList.add('expanded');
@@ -48,12 +41,8 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
     }
   });
 
-  for (let i = 0; i <= 4; i+=1) {
-    emojis[i].classList.add('rotating');
-  }
 
-  /*document.getElementById('hi').style.height = '100px';
-  document.getElementById('hi').innerHTML = "<h3>👉 Nice to meet you, I'll get back to you soon!</h3>"*/
+
 
 
 });
