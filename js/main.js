@@ -22,9 +22,7 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
   let hamburger = document.getElementById('hamburger');
   let dropdown = document.getElementById('dropdown');
   let emojis = document.getElementsByClassName('emoji')
-  let email_field = document.getElementById('Email_Address');
-  let name_field = document.getElementById('name');
-  let message_field = document.getElementById('message');
+
 
   reveal.addEventListener("click", function(e){
     document.getElementById('hi').style.height = '470px';
@@ -32,10 +30,8 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
   });
 
   submit.addEventListener("click", function(e){
-    if (!name_field) {
-      document.getElementById('hi').style.height = '100px';
-      document.getElementById('hi').innerHTML = "<h3>👉 Nice to meet you, I'll get back to you soon!</h3>"
-    }
+    document.getElementById('hi').style.height = '100px';
+    document.getElementById('hi').innerHTML = "<h3>👉 Nice to meet you, I'll get back to you soon!</h3>"
   });
 
   hamburger.addEventListener("click", function(e){
