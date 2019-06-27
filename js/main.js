@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
   submit.addEventListener("click", function(e){
     if(name_field.value && email_field.value && message_field.value) {
       document.getElementById('hi').style.display= "none";
-      document.getElementById('reveal').text= "hello";
     }
+    document.getElementById('hi').style.display= "none";
   });
 
   hamburger.addEventListener("click", function(e){
