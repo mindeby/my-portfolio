@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
   });
 
   form.addEventListener("submit", function(e){
+    console.log('form submited')
       document.getElementById('hi').style.display= "none";
   });
 
