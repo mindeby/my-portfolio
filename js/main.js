@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
   let hamburger = document.getElementById('hamburger');
   let dropdown = document.getElementById('dropdown');
   let emojis = document.getElementsByClassName('emoji')
-  let form = document.getElementById('my-form');
 
 
   reveal.addEventListener("click", function(e){
@@ -30,10 +29,7 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
     box.style.transform = "rotateX(90deg)"
   });
 
-  form.addEventListener("submit", function(e){
-    console.log('form submited')
-      document.getElementById('hi').style.display= "none";
-  });
+
 
   hamburger.addEventListener("click", function(e){
     dropdown.classList.add('expanded');
