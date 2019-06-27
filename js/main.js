@@ -31,12 +31,12 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
     box.style.transform = "rotateX(90deg)"
   });
 
-  submit.addEventListener("click", function(e){
+  /*submit.addEventListener("click", function(e){
     if(name_field.value && email_field.value && message_field.value) {
       document.getElementById('hi').style.height = '100px';
       document.getElementById('hi').innerHTML = "<h3>👉 Nice to meet you, I'll get back to you soon!</h3>"
     }
-  });
+  });*/
 
   hamburger.addEventListener("click", function(e){
     dropdown.classList.add('expanded');
