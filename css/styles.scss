@@ -100,6 +100,11 @@ button {
   font-weight: 500;
   font-size: 14px;
   margin-top: 8px;
+  padding-bottom: 0;
+
+  &:hover {
+    padding-bottom: 0;
+  }
 }
 
 .container {
@@ -126,6 +131,7 @@ button {
   width: 100%;
   padding: 9px 0 2px;
   text-align: center;
+  border-radius: 6px;
   background: $tint-color-muted;
 }
 
@@ -258,5 +264,35 @@ nav {
     height: 4px;
     left: 45px;
     top: 30px;
+  }
+}
+
+/* === Projects === */
+
+.projects-wrapper {
+  margin-top: 40px;
+
+  @media (min-width: 462px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 16px;
+    grid-row-gap: 24px;
+  }
+
+  @media (min-width: 740px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.project {
+  margin-bottom: 40px;
+
+  .emoji-wrapper {
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin-bottom: 16px;
   }
 }
