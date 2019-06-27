@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => { //wait until everything lo
 
   submit.addEventListener("click", function(e){
     let value = input.value
-    if (!value) {
+    if (value) {
       document.getElementById('hi').style.height = '100px';
       document.getElementById('hi').innerHTML = "<h3>👉 Nice to meet you, I'll get back to you soon!</h3>"
     }
